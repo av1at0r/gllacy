@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  src: url('../fonts/roboto.woff2'),
+    url('../fonts/roboto.woff');
+};
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 600;
+  src: url('../fonts/robotomedium.woff2'),
+    url('../fonts/robotomedium.woff');
+};
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: bold;
+  src: url('../fonts/robotobold.woff2'),
+    url('../fonts/robotobold.woff');
+};
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background-color: #849d8f;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}

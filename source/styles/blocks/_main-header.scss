@@ -1,0 +1,23 @@
+
+
+.main-header {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 1146px;
+}
+
+.main-header__logo {
+  margin-right: 23px;
+}
+
+.main-header__nav, .main-header__controls {
+  margin-top: 13px;
+}
+
+.main-header__contacts {
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
