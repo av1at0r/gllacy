@@ -9,6 +9,10 @@
   background-color: rgba(black, 0.3);
 }
 
+.feedback--active {
+  display: block;
+}
+
 .feedback__form {
   // display: none;
   position: fixed;

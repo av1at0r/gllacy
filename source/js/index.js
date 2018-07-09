@@ -22,3 +22,17 @@ function showSlide(slideNumber) {
 }
 
 sliderButtons.forEach(button => button.onclick = sliderButtonEventHandler);
+
+
+const indexFeedbackShowButton = document.getElementById('index-feedback-show');
+indexFeedbackShowButton.onclick = () => {
+  const feedback = document.getElementById('index-feedback');
+  feedback.classList.add('feedback--active');
+  feedback.querySelector('input').focus();
+}
+
+const indexFeedbackCloseButton = document.getElementById('index-feedback-close');
+indexFeedbackCloseButton.onclick = () => {
+  document.getElementById('index-feedback').classList.remove('feedback--active');
+  indexFeedbackShowButton.focus();
+}

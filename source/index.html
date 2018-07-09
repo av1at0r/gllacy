@@ -7,7 +7,7 @@
     <title>Gllacy Shop</title>
   </head>
   <body class="index-page">
-    <div class="feedback">
+    <div id="index-feedback" class="feedback">
       <form action="" class="feedback__form">
         <b class="feedback__title">Мы обязательно вам ответим!</b>
         <label for="feedback__name" class="visually-hidden">Имя</label>
@@ -23,7 +23,7 @@
           cols="30" rows="10"
           placeholder="Напишите что-нибудь..."></textarea>
         <button class="rounded-button feedback__submit" type="submit">Отправить</button>
-        <button class="feedback__close" type="button" name="Закрыть форму">
+        <button id="index-feedback-close" class="feedback__close" type="button" name="Закрыть форму">
           <span class="visually-hidden">Закрыть форму</span>
           <svg aria-hidden="true" width="17" height="17">
             <use xlink:href="img/sprite.svg#cross-small"></use>
@@ -125,7 +125,7 @@
         </ul>
       </nav>
       <p class="main-header__contacts contacts">
-        <span class="contacts__time">С 10 до 20, ежедневно</span><br/>
+        <span class="contacts__time">С 10 до 20, ежедневно</span><br>
         <a class="contacts__phone"href="tel:+88124502525">8 812 450-25-25</a>
       </p>
     </header>
@@ -137,7 +137,7 @@
           <ul class="slider__slides">
             <li id="slide-1" class="slider__slide slider__slide--active"
               data-img="img/ice-cream-slider1@1x.png" data-color="#849d8f">
-              <h3 class="slider__slide-title">Крем-брюле и пломбир<br/>
+              <h3 class="slider__slide-title">Крем-брюле и пломбир<br>
                 с малиновым джемом</h3>
               <a href="#"
                 class="slider__slide-link rounded-button rounded-button--slider">
@@ -146,7 +146,7 @@
             </li>
             <li id="slide-2" class="slider__slide"
               data-img="img/ice-cream-slider2@1x.png" data-color="#8996a6">
-              <h3 class="slider__slide-title">Шоколадный пломбир<br />
+              <h3 class="slider__slide-title">Шоколадный пломбир<br>
                 и лимонный сорбет </h3>
               <a href="#"
                 class="slider__slide-link rounded-button rounded-button--slider">
@@ -155,7 +155,7 @@
             </li>
             <li id="slide-3" class="slider__slide"
               data-img="img/ice-cream-slider3@1x.png" data-color="#9d8b84">
-              <h3 class="slider__slide-title">Пломбир с помадкой<br/>
+              <h3 class="slider__slide-title">Пломбир с помадкой<br>
                 и клубничный щербет</h3>
               <a href="#"
                 class="slider__slide-link rounded-button rounded-button--slider">
@@ -316,7 +316,7 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="address-block map__address">
           <p class="address-block__address">
-            Адрес главного офиса<br/>и офлайн-магазина:<br/>
+            Адрес главного офиса<br>и офлайн-магазина:<br>
             <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
 
           <p class="address-block__phone">
@@ -326,7 +326,8 @@
             </a>
             (с 10 до 20 ежедневно)
           </p>
-          <button class="address-block__feedback rounded-button">
+          <button id="index-feedback-show"
+            class="address-block__feedback rounded-button">
             Форма обратной связи
           </button>
         </div>
