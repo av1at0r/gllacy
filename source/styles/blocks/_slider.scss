@@ -40,6 +40,11 @@
   border: 2px solid white;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: rgba(white, 0.4);
+  }
+
   transition-property: background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -47,4 +52,7 @@
 
 .slider__control--active {
   background-color: white;
+  &:hover, &:focus {
+    background-color: white;
+  }
 }
