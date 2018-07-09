@@ -1,0 +1,43 @@
+.base-link  {
+  color: white;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  text-decoration: none;
+
+  span {
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 0;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(white, 0.2);
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffbc9e;
+    outline: 0;
+    & span::after {
+      background-color: rgba(#f9ac9f, 0.3);
+    }
+  }
+}
+
+.base-link--inverse {
+  color: #323232;
+  span::after {
+    background-color: rgba(black, 0.3);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #e84d37;
+  }
+}

@@ -6,16 +6,47 @@
     margin-right: 2.2%;
   }
 
-  &:before {
+  &::after {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 10;
     display: block;
     background-image: url('../img/hit.svg');
     width: 61px;
     height: 61px;
   }
+
+  &:hover .product__substrate {
+    opacity: 1;
+  }
 }
+
+.product__substrate {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  z-index: -10;
+  top: -5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 109%;
+  height: calc(110% + 57px);
+  position: absolute;
+  background-color: rgba(white, 0.2);
+  border-radius: 5px;
+
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+  transition-property: opacity;
+  transition-duration: 0.3s;
+
+  &:focus-within {
+    opacity: 1;
+  }
+}
+
 .product__photo {
   display: block;
   width: 100%;

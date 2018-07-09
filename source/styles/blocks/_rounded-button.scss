@@ -15,7 +15,21 @@
 
   background-image: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    background-image: linear-gradient( to bottom, #f58669 0%, #ec6f5e 100%);
+  }
+
+  &:active {
+    outline: 0;
+    background-image: linear-gradient( to bottom, #e74a35 0%, #f26843 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
+  }
 }
+
 
 .rounded-button--slider{
   font-size: 32px;
@@ -25,6 +39,15 @@
   border-radius: 30px;
 }
 
+
 .rounded-button--submit {
   padding: 0px 18px 6px 20px;
+}
+
+.rounded-button--product {
+  position: absolute;
+  width: 69%;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
 }

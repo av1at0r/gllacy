@@ -8,6 +8,8 @@
 
 .index-content__hits {
   margin-bottom: 38px;
+  position: relative;
+  z-index: 10;
 }
 
 .index-content__features {
