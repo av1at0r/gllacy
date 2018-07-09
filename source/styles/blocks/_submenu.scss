@@ -29,6 +29,13 @@
     background-color: #fbded8;
     outline: none;
   }
+  a:active {
+    background-color: #f6b5a5;
+  }
+}
+
+.submenu__item--active a {
+  background-color: #d07058;
 }
 
 .submenu__item--bold {

@@ -25,6 +25,14 @@
   position: relative;
   &:hover,
   &:focus-within {
+    & .main-nav__dropdown-control {
+      background-color: #f7f6f3;
+      color: #323232;
+      outline: none;
+      svg {
+        fill: black;
+      }
+    }
     & .main-nav__nested-item {
       display: block;
     }
@@ -52,6 +60,10 @@
       background-color: #f7f6f3;
       color: #323232;
       outline: none;
+    }
+
+    &:active {
+      box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
     }
   }
 }
@@ -94,6 +106,10 @@
   }
 }
 
+.main-nav__user-control--active a {
+  background-color: #d07058;
+}
+
 .main-nav__search-button {
   position: relative;
   border-radius: 50%;
@@ -113,9 +129,4 @@
 .main-nav__submenu {
   left: -7px;
   top: 37px;
-}
-
-
-.main-nav__dropdown-form {
-
 }

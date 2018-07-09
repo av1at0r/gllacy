@@ -38,6 +38,11 @@
   border-radius: 50%;
 
   border: 2px solid white;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .slider__control--active {

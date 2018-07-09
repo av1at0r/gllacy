@@ -15,7 +15,7 @@
           class="base-input base-input--feedback feedback__input"
           placeholder="Как вас зовут?">
         <label for="feedback__email" class="visually-hidden">E-mail</label>
-        <input id="feedback__name" type="email"
+        <input id="feedback__email" type="email"
           class="base-input feedback__input base-input--feedback"
           placeholder="Ваша почта для ответа?">
         <label for="feedback__review" class="visually-hidden">Сообщение</label>
@@ -37,7 +37,7 @@
       <nav class="main-nav main-header__nav">
         <ul class="main-nav__site-navigation">
           <li class="main-nav__site-nav-item main-nav__dropdown-item">
-            <a href="#">
+            <a class="main-nav__dropdown-control" href="#">
               <span class="with-underline">Каталог</span>
             </a>
             <ul class="submenu main-nav__nested-item main-nav__nested-item--catalog">
@@ -72,7 +72,7 @@
         </ul>
         <ul class="main-nav__user-controls">
           <li class="main-nav__search main-nav__dropdown-item">
-            <button class="main-nav__search-button main-nav__user-control">
+            <button class="main-nav__search-button main-nav__user-control main-nav__dropdown-control">
               <span class="visually-hidden">Поиск</span>
               <svg aria-hidden="true" width="17" height="17">
                 <use xlink:href="img/sprite.svg#loupe"></use>
@@ -88,7 +88,7 @@
             </form>
           </li>
           <li class="main-nav__login main-nav__dropdown-item">
-            <button class="main-nav__login main-nav__user-control">
+            <button class="main-nav__login main-nav__user-control main-nav__dropdown-control">
               <svg role="presentation" aria-hidden="true" width="20" height="20px">
                 <use xlink:href="img/sprite.svg#entrance"></use>
               </svg>
@@ -115,7 +115,7 @@
             </form>
           </li>
           <li>
-            <button class="main-nav__cart main-nav__user-control">
+            <button class="main-nav__cart main-nav__user-control main-nav__dropdown-control">
               <svg role="presentation" aria-hidden="true" width="20" height="20px">
                 <use xlink:href="img/sprite.svg#basket"></use>
               </svg>
@@ -135,7 +135,8 @@
         <h2 class="visually-hidden">Двойные предложения</h2>
         <div class="slider">
           <ul class="slider__slides">
-            <li id="slide-1" class="slider__slide slider__slide--active">
+            <li id="slide-1" class="slider__slide slider__slide--active"
+              data-img="img/ice-cream-slider1@1x.png" data-color="#849d8f">
               <h3 class="slider__slide-title">Крем-брюле и пломбир<br/>
                 с малиновым джемом</h3>
               <a href="#"
@@ -143,30 +144,38 @@
                 Давайте оба!
               </a>
             </li>
-            <li id="slide-2" class="slider__slide">
+            <li id="slide-2" class="slider__slide"
+              data-img="img/ice-cream-slider2@1x.png" data-color="#8996a6">
               <h3 class="slider__slide-title">Шоколадный пломбир<br />
                 и лимонный сорбет </h3>
-              <a href="#" class="slider__slide-link rounded-button">Давайте оба!</a>
+              <a href="#"
+                class="slider__slide-link rounded-button rounded-button--slider">
+                Давайте оба!
+              </a>
             </li>
-            <li id="slide-3" class="slider__slide">
+            <li id="slide-3" class="slider__slide"
+              data-img="img/ice-cream-slider3@1x.png" data-color="#9d8b84">
               <h3 class="slider__slide-title">Пломбир с помадкой<br/>
                 и клубничный щербет</h3>
-              <a href="#" class="slider__slide-link rounded-button">Давайте оба!</a>
+              <a href="#"
+                class="slider__slide-link rounded-button rounded-button--slider">
+                Давайте оба!</a>
             </li>
           </ul>
           <ul class="slider__controls">
             <li>
-              <button class="slider__control slider__control--active">
+              <button class="slider__control slider__control--active"
+                data-slide="1">
                 <span class="visually-hidden">Слайд 1</span>
               </button>
             </li>
             <li>
-              <button class="slider__control">
+              <button class="slider__control" data-slide="2">
                 <span class="visually-hidden">Слайд 2</span>
               </button>
             </li>
             <li>
-              <button class="slider__control">
+              <button class="slider__control" data-slide="3">
                 <span class="visually-hidden">Слайд 3</span>
               </button>
             </li>
@@ -365,5 +374,6 @@
           © 2017
       </div>
     </footer>
+    <script type="text/javascript" src="../js/index.js"></script>
   </body>
 </html>
