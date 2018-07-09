@@ -1,0 +1,44 @@
+@import "mixins";
+
+.submenu {
+  @include reset-list;
+  position: absolute;
+  display: none;
+  min-width: 143px;
+  overflow: hidden;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    display: block;
+  }
+}
+
+.submenu__item {
+  a {
+    display: block;
+    padding: 8px 20px 6px 20px;
+    color: #323232;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+  }
+  a:hover, a:focus {
+    background-color: #fbded8;
+    outline: none;
+  }
+}
+
+.submenu__item--bold {
+  a {
+    font-weight: bold;
+  }
+}
+
+.submenu__divider {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 90%;
+}

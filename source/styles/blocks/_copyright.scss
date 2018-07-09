@@ -1,0 +1,20 @@
+.copyright {
+  font-size: 12px;
+  // width: 190px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 108px;
+    height: 40px;
+    margin-bottom: 3px;
+
+    background-image: url('../img/logo-htmlacademy.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: inherit;
+}

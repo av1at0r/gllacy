@@ -1,0 +1,59 @@
+.features {
+  background-image: url('../img/waffer@1x.jpg');
+  background-repeat: no-repeat;
+  color: #323232;
+  padding: 25px 19px;
+  padding-bottom: 3px;
+  border-radius: 15px;
+}
+
+.features__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features__list {
+  @include reset-list;
+  padding-left: 57px;
+  padding-top: 22px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features__item {
+  position: relative;
+  width: 483px;
+  font-weight: normal;
+  line-height: 22px;
+  margin-bottom: 21px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 49px;
+    height: 49px;
+    left: -56px;
+    top: -14px;
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--ice-cream::before {
+    background-image: url('../img/ice-cream.svg');
+}
+
+.features__item--eco::before {
+  background-image: url('../img/eco.svg');
+}
+
+.features__item--cow::before {
+  background-image: url('../img/cow.svg');
+}
+
+.features__item--thermometer::before {
+  background-image: url('../img/thermometer.svg');
+}

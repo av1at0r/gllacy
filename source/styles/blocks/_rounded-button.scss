@@ -1,0 +1,30 @@
+@import "mixins";
+
+.rounded-button {
+  @include reset-button;
+
+  padding: 9px 23px 13px 23px;
+  border-radius: 23px;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto";
+  color: white;
+  text-decoration: none;
+
+  background-image: linear-gradient(to bottom, #e74a35 0%, #f26843 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+}
+
+.rounded-button--slider{
+  font-size: 32px;
+  line-height: 42px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  padding: 7px 40px 13px 40px;
+  border-radius: 30px;
+}
+
+.rounded-button--submit {
+  padding: 0px 18px 6px 20px;
+}

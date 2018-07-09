@@ -1,0 +1,41 @@
+.address-block {
+  padding: 30px 25px;
+  width: 302px;
+  box-sizing: border-box;
+  min-height: 306px;
+
+  color: #323232;
+
+  background-color: white;
+  border-radius: 15px;
+}
+
+.address-block__address,
+.address-block__phone {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  strong {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.address-block__phone {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.address-block__phone-link {
+  display: block;
+  margin: 4px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.address-block__feedback {
+  width: 100%;
+}

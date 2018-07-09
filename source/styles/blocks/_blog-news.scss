@@ -1,0 +1,37 @@
+.blog-news {
+  padding: 24px 20px;
+  width: 560px;
+  min-height: 220px;
+  box-sizing: border-box;
+
+  color: #323232;
+
+  background-image: url('../img/sherbet-index@1x.jpg');
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.blog-news__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.blog-news__post {
+  margin: 0;
+  width: 290px;
+}
+
+.blog-news__post-link {
+  margin: 0;
+  max-width: 290px;
+
+  font-size: 24px;
+  line-height: 30px;
+
+
+  background: linear-gradient(to top, currentColor 2px, transparent 2px),
+    rgba(255, 255, 255, 0.8);
+}

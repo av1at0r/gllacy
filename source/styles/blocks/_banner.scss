@@ -1,0 +1,39 @@
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  min-height: 230px;
+  box-sizing: border-box;
+  padding: 14px 20px 24px 20px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+}
+
+.banner--raspberry {
+  background-color: #5e101e;
+  background-image: url('../img/raspberry@1x.jpg');
+}
+
+.banner--chocolate{
+  background-color: #45291c;
+  background-image: url('../img/chocolate@1x.jpg');
+}
+
+.banner__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banner__description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.banner__link {
+  align-self: flex-end;
+  margin-top: auto;
+}

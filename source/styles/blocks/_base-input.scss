@@ -1,0 +1,31 @@
+.base-input{
+  height: 44px;
+  width: 100%;
+  padding: 0 14px;
+  border-radius: 6px;
+
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+  border: 1px solid #d3d3d2;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px #8fbdec;
+  }
+}
+
+.base-input--feedback {
+  font-size: 16px;
+}
+
+.base-input--textarea {
+  height: 155px;
+  padding: 10px;
+  margin-bottom: 19px;
+  font-size: 16px;
+}
+
+.feedback__submit {
+  float: right;
+}

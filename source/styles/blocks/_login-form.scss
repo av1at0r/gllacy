@@ -1,0 +1,38 @@
+.login-form {
+  min-width: 277px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  border-radius: 6px;
+  background-color: #f8f7f4;
+
+  input:first-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.login-form__submit {
+  margin-right: 20px;
+}
+
+.login-form__submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-form__links {
+  display: block;
+}
+
+.login-form__link {
+  display: block;
+  color: #323232;
+  font-size: 13px;
+  text-decoration: none;
+
+  &:first-child {
+    margin-bottom: 6px;
+  }
+}

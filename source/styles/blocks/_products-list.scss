@@ -1,0 +1,6 @@
+@import "mixins";
+
+.products-list {
+  @include reset-list;
+  display: flex;
+}

@@ -3,16 +3,17 @@
 .main-header {
   position: relative;
   display: flex;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 10px;
-  max-width: 1146px;
 }
 
 .main-header__logo {
-  margin-right: 23px;
+  margin-right: 10px;
 }
 
 .main-header__nav, .main-header__controls {
+  position: relative;
+  z-index: 10;
   margin-top: 13px;
 }
 

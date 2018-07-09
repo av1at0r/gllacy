@@ -1,0 +1,40 @@
+@import "mixins";
+
+.secondary-nav {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
+.secondary-nav__item {
+  min-width: 142px;
+
+  a {
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    text-decoration: none;
+  }
+}
+
+.secondary-nav__item--with-love {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 5px;
+
+    display: block;
+    width: 15px;
+    height: 13px;
+
+    background-image: url('../img/heart.svg');
+  }
+  a {
+    font-weight: bold;
+  }
+}

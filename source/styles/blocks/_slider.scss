@@ -1,0 +1,45 @@
+@import "../mixins";
+
+.slider__slides {
+  @include reset-list;
+  text-align: center;
+}
+
+.slider__slide {
+  display: none
+}
+
+.slider__slide--active {
+  display: block;
+}
+
+.slider__slide-title {
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60.35px;
+  margin-bottom: 41px;
+}
+
+.slider__controls {
+  @include reset-list;
+  display: flex;
+  position: relative;
+  top: -30px;
+  max-width: 100px;
+}
+
+.slider__control {
+  @include reset-button;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 50%;
+
+  border: 2px solid white;
+}
+
+.slider__control--active {
+  background-color: white;
+}

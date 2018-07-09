@@ -1,0 +1,56 @@
+@import "../mixins";
+
+.socials {
+  @include reset-list;
+
+  margin-top: 36px;
+
+  display: flex;
+  & > *:not(:last-child) {
+    margin-right: 11px;
+  }
+}
+
+.socials__link {
+  display: block;
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+
+
+  border-radius: 50%;
+  border: solid 3px rgba(white, 0.5);
+  &::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+
+
+}
+
+.socials__link--twitter {
+  &::before {
+    background-image: url('../img/twitter.svg');
+  }
+}
+
+.socials__link--instagram {
+  &::before {
+    background-image: url('../img/instagram.svg');
+  }
+}
+
+.socials__link--facebook {
+  &::before {
+    background-image: url('../img/fb.svg');
+  }
+}
+
+.socials__link--vk {
+  &::before {
+    background-image: url('../img/vk.svg');
+  }
+}

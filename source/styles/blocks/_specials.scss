@@ -1,0 +1,9 @@
+@import "mixins";
+
+.specials__banners {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%
+}
