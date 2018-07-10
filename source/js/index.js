@@ -1,7 +1,7 @@
 let sliderButtons = document.querySelectorAll('button.slider__control');
 let activeButton = document.querySelector('button.slider__control--active');
 let activeSlide = document.querySelector('.slider__slide--active');
-
+const sliderBackground = document.getElementById('slider-background');
 
 function sliderButtonEventHandler(e) {
   if (!e.target.classList.contains('slider__control--active')) {
@@ -17,8 +17,8 @@ function showSlide(slideNumber) {
   activeSlide.classList.remove('slider__slide--active')
   slideToShow.classList.add('slider__slide--active');
   activeSlide = slideToShow;
-  document.body.style.backgroundImage = `url(${slideToShow.dataset.img})`;
-  document.body.style.backgroundColor = slideToShow.dataset.color;
+  sliderBackground.style.backgroundImage = `url(${slideToShow.dataset.img})`;
+  sliderBackground.style.backgroundColor = slideToShow.dataset.color;
 }
 
 sliderButtons.forEach(button => button.onclick = sliderButtonEventHandler);
