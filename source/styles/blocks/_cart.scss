@@ -1,0 +1,68 @@
+@import "../mixins";
+
+.cart {
+  min-width: 540px;
+  box-sizing: border-box;
+  padding: 16px;
+
+  font-size: 13px;
+  font-weight: normal;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+
+.cart__list {
+  width: 100%;
+}
+
+.cart__product > td {
+  padding-bottom: 13px;
+}
+
+
+.cart__product-pic {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  padding-left: 5px;
+}
+
+.cart__price {
+  color: #999999;
+}
+
+.cart__delete-product {
+  @include reset-button;
+  background-image: url('../img/cross-small.svg');
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 11px;
+}
+
+.cart__product-name {
+  max-width: 200px;
+}
+
+.cart__divider {
+  height: 1px;
+  margin-bottom: 12px;
+
+  border: none;
+  color: #cacac7;
+  background-color: #cacac7;
+}
+
+.cart__sum {
+  float: right;
+  margin: 0;
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.cart__checkout {
+  float: right;
+  clear: right;
+}

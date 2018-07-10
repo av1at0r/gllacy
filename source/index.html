@@ -26,7 +26,7 @@
         <button id="index-feedback-close" class="feedback__close" type="button" name="Закрыть форму">
           <span class="visually-hidden">Закрыть форму</span>
           <svg aria-hidden="true" width="17" height="17">
-            <use xlink:href="img/sprite.svg#cross-small"></use>
+            <use xlink:href="img/sprite.svg#cross-big"></use>
           </svg>
         </button>
       </form>
@@ -114,13 +114,62 @@
               </div>
             </form>
           </li>
-          <li>
+          <li class="main-nav__dropdown-item">
             <button class="main-nav__cart main-nav__user-control main-nav__dropdown-control">
               <svg role="presentation" aria-hidden="true" width="20" height="20px">
                 <use xlink:href="img/sprite.svg#basket"></use>
               </svg>
               Пусто
             </button>
+            <div class="cart main-nav__nested-item">
+              <table class="cart__list">
+                <tr class="cart__product">
+                  <td>
+                    <button class="cart__delete-product">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </td>
+                  <td>
+                    <img class="cart__product-pic"
+                      src="img/ice-cream-orange@1x.jpg" alt="">
+                  </td>
+                  <td class="cart__product-name">
+                    Пломбир с апельсиновым джемом
+                  </td>
+                  <td>
+                    1,5 кг. x <span class="cart__price">200 руб.</span>
+                  </td>
+                  <td>
+                    300 руб.
+                  </td>
+                </tr>
+                <tr class="cart__product">
+                  <td>
+                    <button class="cart__delete-product">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </td>
+                  <td>
+                    <img class="cart__product-pic"
+                      src="img/ice-cream-strawberry@1x.jpg" alt="">
+                  </td>
+                  <td class="cart__product-name">
+                    Клубничный пломбир с присыпкой из белого шоколада
+                  </td>
+                  <td>
+                    1,5 кг. x <span class="cart__price">300 руб.</span>
+                  </td>
+                  <td>
+                    450 руб.
+                  </td>
+                </tr>
+              </table>
+              <hr class="cart__divider">
+              <p class="cart__sum">Итого: 750 руб.</p>
+              <button class="rounded-button cart__checkout" type="button" name="Оформить заказ">
+                Оформить заказ
+              </button>
+            </div>
           </li>
         </ul>
       </nav>
