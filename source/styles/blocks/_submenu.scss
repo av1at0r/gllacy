@@ -3,7 +3,6 @@
 .submenu {
   @include reset-list;
   position: absolute;
-  display: none;
   min-width: 143px;
   overflow: hidden;
 
@@ -11,9 +10,6 @@
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 
-  &:hover {
-    display: block;
-  }
 }
 
 .submenu__item {

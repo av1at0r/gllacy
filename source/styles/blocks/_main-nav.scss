@@ -54,6 +54,9 @@
     color: white;
     line-height: 18px;
     text-decoration: none;
+    transition-property: background-color, color;
+    transition-duration: 0.15s, 0.05s;
+    transition-timing-function: ease-out;
 
     &:hover,
     &:focus  {
@@ -116,6 +119,10 @@
       fill: black;
     }
   }
+
+  transition-property: background-color, color;
+  transition-duration: 0.15s, 0.05s;
+  transition-timing-function: ease-out;
 }
 
 .main-nav__user-control--active a {
