@@ -2,10 +2,16 @@
   position: relative;
   width: 267px;
 
-  &:not(:last-child) {
-    margin-right: 2.2%;
+  &:hover,
+  &:focus-within {
+    z-index: 20;
+    .product__substrate {
+      opacity: 1;
+    }
   }
+}
 
+.product--hit {
   &::after {
     content: '';
     position: absolute;
@@ -16,10 +22,6 @@
     background-image: url('../img/hit.svg');
     width: 61px;
     height: 61px;
-  }
-
-  &:hover .product__substrate {
-    opacity: 1;
   }
 }
 
@@ -41,10 +43,6 @@
 
   transition-property: opacity;
   transition-duration: 0.3s;
-
-  &:focus-within {
-    opacity: 1;
-  }
 }
 
 .product__photo {
@@ -83,4 +81,12 @@
   text-align: center;
   font-size: 16px;
   line-height: 22px;
+  span {
+    display: inline;
+    background: linear-gradient(to right, rgba(white, 0.2), rgba(white, 0.2) 100%);
+    background-position: 0 100%;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+  }
+
 }

@@ -3,4 +3,10 @@
 .products-list {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products-list__item {
+  margin-bottom: 40px;
 }

@@ -3,40 +3,18 @@
   <head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
-    <title>Gllacy Shop</title>
+    <title>Gllacy Shop - Каталог</title>
   </head>
-  <body class="index-page">
-    <div id="index-feedback" class="feedback">
-      <form action="" class="feedback__form">
-        <b class="feedback__title">Мы обязательно вам ответим!</b>
-        <label for="feedback__name" class="visually-hidden">Имя</label>
-        <input id="feedback__name" type="text"
-          class="base-input base-input--feedback feedback__input"
-          placeholder="Как вас зовут?">
-        <label for="feedback__email" class="visually-hidden">E-mail</label>
-        <input id="feedback__email" type="email"
-          class="base-input feedback__input base-input--feedback"
-          placeholder="Ваша почта для ответа?">
-        <label for="feedback__review" class="visually-hidden">Сообщение</label>
-        <textarea id="feedback__review" class="base-input base-input--textarea"
-          cols="30" rows="10"
-          placeholder="Напишите что-нибудь..."></textarea>
-        <button class="rounded-button feedback__submit" type="submit">Отправить</button>
-        <button id="index-feedback-close" class="feedback__close" type="button" name="Закрыть форму">
-          <span class="visually-hidden">Закрыть форму</span>
-          <svg aria-hidden="true" width="17" height="17">
-            <use xlink:href="img/sprite.svg#cross-big"></use>
-          </svg>
-        </button>
-      </form>
-    </div>
+  <body>
 
-    <header class="main-header content-positioner index-page__header">
-      <img class="main-header__logo" src="img/logo.svg" alt="Gllacy Shop" width="154" height="62"/>
+    <header class="main-header content-positioner ">
+      <a href="index.html">
+        <img class="main-header__logo" src="img/logo.svg" alt="Gllacy Shop" width="154" height="62"/>
+      </a>
       <nav class="main-nav main-header__nav">
         <ul class="main-nav__site-navigation">
-          <li class="main-nav__site-nav-item main-nav__dropdown-item">
-            <a class="main-nav__dropdown-control" href="#">
+          <li class="main-nav__site-nav-item main-nav__site-nav-item--active main-nav__dropdown-item">
+            <a class="main-nav__dropdown-control" href="catalog.html">
               <span>Каталог</span>
             </a>
             <ul class="submenu main-nav__nested-item main-nav__nested-item--catalog">
@@ -44,8 +22,8 @@
                 <a href="#">Новинки</a>
               </li>
               <hr class="submenu__divider">
-              <li class="submenu__item">
-                <a href="#">Сливочное</a>
+              <li class="submenu__item submenu__item--active">
+                <a href="catalog.html">Сливочное</a>
               </li>
               <li class="submenu__item">
                 <a href="#">Щербеты</a>
@@ -130,7 +108,7 @@
                   </td>
                   <td>
                     <img class="cart__product-pic"
-                      src="img/ice-cream-orange@1x.jpg" alt="">
+                      src="img/ice-cream-orange.jpg" alt="">
                   </td>
                   <td class="cart__product-name">
                     Пломбир с апельсиновым джемом
@@ -150,7 +128,7 @@
                   </td>
                   <td>
                     <img class="cart__product-pic"
-                      src="img/ice-cream-strawberry@1x.jpg" alt="">
+                      src="img/ice-cream-strawberry.jpg" alt="">
                   </td>
                   <td class="cart__product-name">
                     Клубничный пломбир с присыпкой из белого шоколада
@@ -178,6 +156,345 @@
       </p>
     </header>
 
+    <main class="catalog-main content-positioner">
+      <h1 class="visually-hidden">Каталог мороженного</h1>
+      <div class="crumbs">
+        <a class="base-link base-link--crumbs" href="index.html">
+          <span>Главная</span>
+        </a>
+        <span class="crumbs__separator">»</span>
+        <a class="base-link base-link--crumbs">
+          <span>Каталог</span>
+        </a>
+        <span class="crumbs__separator">»</span>
+        <a class="base-link base-link--crumbs">
+          <span>Сливочное</span>
+        </a>
+      </div>
+      <section class="catalog catalog-main__catalog">
+        <h2 class="catalog__title">Сливочное мороженое</h2>
+        <form action="" class="catalog__filter filter-products">
+          <h3 class="visually-hidden">Отфильтровать товары</h3>
+
+          <div class="filter-products__row">
+            <div class="filter-products__criterion">
+              <label for="catalog-sort" class="filter-products__criterion-label">
+                Сортировка:
+              </label>
+              <div class="filter-products__sort-wrapper">
+                <select id="catalog-sort" class="filter-products__sort">
+                  <option>по популярности</option>
+                  <option>сначала недорогие</option>
+                  <option>сначала дорогие</option>
+                  <option>по жирности</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-products__criterion">
+              <span class="filter-products__criterion-label">Цена
+                <span>100 руб. – 500 руб.</span>
+              </span>
+              <div class="filter-products__price-range">
+                <button class="filter-products__price-control">
+                  <span class="visually-hidden">Нижний ценовой предел</span>
+                </button>
+                <button class="filter-products__price-control">
+                  <span class="visually-hidden">Нижний ценовой предел</span>
+                </button>
+              </div>
+            </div>
+            <div class="filter-products__criterion">
+              <span id="fat-label" class="filter-products__criterion-label">Жирность</span>
+              <div class="filter-products__fat" role="radiogroup"
+                aria-labelledby="fat-label">
+                <label class="filter-products__label filter-products__criterion-label--radio">
+                  <input checked name="fat" type="radio" class=" filter-products__radio">
+                  <span class="filter-products__radio-checkmark"></span>
+                  0%
+                </label>
+                <label class="filter-products__label filter-products__criterion-label--radio">
+                  <input name="fat" type="radio" class=" filter-products__radio">
+                  <span class="filter-products__radio-checkmark"></span>
+                  до 10%
+                </label>
+                <label class="filter-products__label filter-products__criterion-label--radio">
+                  <input name="fat" type="radio" class="filter-products__radio">
+                  <span class="filter-products__radio-checkmark"></span>
+                  до 30%
+                </label>
+                <label class="filter-products__label filter-products__criterion-label--radio">
+                  <input name="fat" type="radio" class="filter-products__radio">
+                  <span class="filter-products__radio-checkmark"></span>
+                  выше 30%
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-products__row">
+            <div class="filter-products__criterion">
+              <span id="filler-label" class="filter-products__criterion-label">
+                Наполнители:
+              </span>
+              <div class="filter-products__filler" labelledby="filler-label">
+                <label class="filter-products__label filter-products__label--checkbox">
+                  <input checked type="checkbox" class="filter-products__checkbox">
+                  <span class="filter-products__checkbox-checkmark"></span>
+                  шоколадные
+                </label>
+                <label class="filter-products__label filter-products__label--checkbox">
+                  <input type="checkbox" class="filter-products__checkbox">
+                  <span class="filter-products__checkbox-checkmark"></span>
+                  сахарные присыпки
+                </label>
+                <label class="filter-products__label filter-products__label--checkbox">
+                  <input type="checkbox" class="filter-products__checkbox">
+                  <span class="filter-products__checkbox-checkmark"></span>
+                  фрукты
+                </label>
+                <label class="filter-products__label filter-products__label--checkbox">
+                  <input type="checkbox" class="filter-products__checkbox">
+                  <span class="filter-products__checkbox-checkmark"></span>
+                  сиропы
+                </label>
+                <label class="filter-products__label filter-products__label--checkbox">
+                  <input type="checkbox" class="filter-products__checkbox">
+                  <span class="filter-products__checkbox-checkmark"></span>
+                  джемы
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="filter-products__submit">
+              Применить
+            </button>
+          </div>
+        </form>
+        <ul class="products-list">
+          <li class="product products-list__item">
+            <img src="img/ice-cream-orange.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              310
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочное с апельсиновым джемом и
+              цитрусовой стружкой
+              </span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-cofee-choco.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              380
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочно-кофейное с кусочками шоколада
+              </span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-strawberry.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              355
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-caramel.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              415
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочное крем-брюле с карамельной подливкой</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-lingonberry.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              325
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочное с брусничным джемом</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-blueberries.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              410
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочно-черничное с цельными ягодами черники</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-lemon.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              375
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочно-лимонное с карамельной присыпкой</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-choco-chips.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              320
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочное с шоколадной стружкой</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-vanil-choco.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              440
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочно-ванильное с кусочками шоколада</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-menthol.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              435
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочноe с ментоловым сиропом</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-black-choco.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              355
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочное с кусочками черного шоколада</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+          <li class="product products-list__item">
+            <img src="img/ice-cream-mint.jpg" alt="" class="product__photo">
+            <p class="product__cost">
+              420
+              <svg width="31" height="36"><use xlink:href="../img/sprite.svg#ruble"></use></svg>
+              <span class="product__cost-unit">/кг</span>
+            </p>
+            <p class="product__name">
+              <span>Сливочное с мятным сиропом</span>
+            </p>
+            <div class="product__substrate">
+              <a href="#"
+                class="rounded-button rounded-button--product product__see-more">
+                Быстрый просмотр
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="catalog-main__paginator paginator">
+        <a href="#" class="paginator__arrow paginator__arrow--left">
+          <span class="visually-hidden">Предидущая страница</span>
+        </a>
+        <span class="paginator__pages">
+          <a href="#" class="paginator__page-link paginator__page-link--active">1</a>
+          <a href="#" class="paginator__page-link">2</a>
+          <a href="#" class="paginator__page-link">3</a>
+          <a href="#" class="paginator__page-link">4</a>
+          <a href="#" class="paginator__page-link">5</a>
+        </span>
+        <a href="#" class="paginator__arrow paginator__arrow">
+          <span class="visually-hidden">Следующая страница</span>
+        </a>
+      </div>
+    </main>
     <footer class="main-footer content-positioner">
         <ul class="socials main-footer__socials">
         <li>
@@ -224,6 +541,5 @@
           © 2017
       </div>
     </footer>
-    <script type="text/javascript" src="../js/index.js"></script>
   </body>
 </html>

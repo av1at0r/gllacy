@@ -69,6 +69,7 @@
       box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
     }
   }
+
   span {
     position: relative;
     &::after {
@@ -80,6 +81,16 @@
       height: 1px;
       background-color: rgba(white, 0.2);
     }
+  }
+}
+
+.main-nav__site-nav-item--active {
+  & > a{
+    color: white;
+    background-color: #d07058;
+  }
+  span::after {
+    display: none;
   }
 }
 
