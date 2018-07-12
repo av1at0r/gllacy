@@ -1,6 +1,6 @@
 .blog-news {
   padding: 24px 20px;
-  width: 560px;
+  width: 48.9%;
   min-height: 220px;
   box-sizing: border-box;
 
@@ -8,6 +8,8 @@
 
   background-image: url('../img/sherbet-index@1x.jpg');
   background-repeat: no-repeat;
+  // background-color: white;
+  background-size: cover;
   border-radius: 15px;
 }
 

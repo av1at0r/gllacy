@@ -1,6 +1,6 @@
 .product {
   position: relative;
-  width: 267px;
+  width: 23%;
 
   &:hover,
   &:focus-within {
@@ -54,7 +54,7 @@
 
 .product__cost {
   position: absolute;
-  top: 154px;
+  bottom: 15px;
   display: flex;
   align-items: flex-end;
 

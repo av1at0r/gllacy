@@ -5,6 +5,7 @@
   padding: 25px 19px;
   padding-bottom: 3px;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .features__title {
@@ -15,7 +16,7 @@
 
 .features__list {
   @include reset-list;
-  padding-left: 57px;
+  // padding-left: 57px;
   padding-top: 22px;
 
   display: flex;
@@ -25,10 +26,12 @@
 
 .features__item {
   position: relative;
-  width: 483px;
+  width: 48.9%;
   font-weight: normal;
   line-height: 22px;
   margin-bottom: 21px;
+  padding-left: 57px;
+  box-sizing: border-box;
 
   &::before {
     content: '';
@@ -36,7 +39,7 @@
     display: block;
     width: 49px;
     height: 49px;
-    left: -56px;
+    left: 0;
     top: -14px;
     background-repeat: no-repeat;
   }

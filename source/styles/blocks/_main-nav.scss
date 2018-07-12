@@ -127,7 +127,7 @@
     outline: none;
 
     svg {
-      fill: black;
+      fill: #343434;
     }
   }
 
@@ -159,4 +159,16 @@
 .main-nav__submenu {
   left: -7px;
   top: 37px;
+}
+
+.main-nav__cart--not-empty {
+  background-color: #f7f6f3;
+  color: #343434;
+  padding-right: 15px;
+  .main-nav__cart-icon-outline {
+    fill: #343434;
+  }
+  .main-nav__cart-icon-inner {
+    fill: #e84d37;
+  }
 }
