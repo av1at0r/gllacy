@@ -132,6 +132,10 @@
     }
   }
 
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
   transition-property: background-color, color;
   transition-duration: 0.15s, 0.05s;
   transition-timing-function: ease-out;

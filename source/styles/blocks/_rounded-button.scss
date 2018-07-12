@@ -28,6 +28,10 @@
     background-image: linear-gradient( to bottom, #e74a35 0%, #f26843 100%);
     box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
   }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
 }
 
 
