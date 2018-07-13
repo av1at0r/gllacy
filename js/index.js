@@ -1,7 +1,8 @@
-let sliderButtons = document.querySelectorAll('button.slider__control');
-let activeButton = document.querySelector('button.slider__control--active');
-let activeSlide = document.querySelector('.slider__slide--active');
-const sliderBackground = document.getElementById('slider-background');
+var sliderButtons = document.querySelectorAll('button.slider__control');
+var activeButton = document.querySelector('button.slider__control--active');
+var activeSlide = document.querySelector('.slider__slide--active');
+var activeBackground = document.querySelector('.slider__slide-bg.slider__slide-bg--active');
+var sliderBackground = document.getElementById('slider-background');
 
 function sliderButtonEventHandler(e) {
   if (!e.target.classList.contains('slider__control--active')) {
@@ -13,26 +14,31 @@ function sliderButtonEventHandler(e) {
 }
 
 function showSlide(slideNumber) {
-  const slideToShow = document.getElementById(`slide-${slideNumber}`);
+  var slideToShow = document.getElementById('slide-' + slideNumber);
   activeSlide.classList.remove('slider__slide--active')
   slideToShow.classList.add('slider__slide--active');
   activeSlide = slideToShow;
-  sliderBackground.style.backgroundImage = `url(${slideToShow.dataset.img})`;
+  activeBackground.classList.remove('slider__slide-bg--active');
+  activeBackground = document.getElementById('slide-bg-' + slideNumber);
+  activeBackground.classList.add('slider__slide-bg--active');
   sliderBackground.style.backgroundColor = slideToShow.dataset.color;
 }
 
-sliderButtons.forEach(button => button.onclick = sliderButtonEventHandler);
+
+for (var i = 0; i < sliderButtons.length; i++) {
+  sliderButtons[i].onclick = sliderButtonEventHandler;
+}
 
 
-const indexFeedbackShowButton = document.getElementById('index-feedback-show');
-indexFeedbackShowButton.onclick = () => {
-  const feedback = document.getElementById('index-feedback');
+var indexFeedbackShowButton = document.getElementById('index-feedback-show');
+indexFeedbackShowButton.onclick = function() {
+  var feedback = document.getElementById('index-feedback');
   feedback.classList.add('feedback--active');
   feedback.querySelector('input').focus();
 }
 
-const indexFeedbackCloseButton = document.getElementById('index-feedback-close');
-indexFeedbackCloseButton.onclick = () => {
+var indexFeedbackCloseButton = document.getElementById('index-feedback-close');
+indexFeedbackCloseButton.onclick = function() {
   document.getElementById('index-feedback').classList.remove('feedback--active');
   indexFeedbackShowButton.focus();
 }
