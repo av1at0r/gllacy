@@ -4,9 +4,13 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .products-list__item {
   margin-bottom: 40px;
+}
+
+.products-list__item:not(:nth-of-type(4n-3)) {
+  margin-left: 2.3%;
 }

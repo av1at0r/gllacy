@@ -2,8 +2,13 @@
   position: relative;
   width: 23%;
 
-  &:hover,
   &:focus-within {
+    z-index: 20;
+    .product__substrate {
+      opacity: 1;
+    }
+  }
+  &:hover{
     z-index: 20;
     .product__substrate {
       opacity: 1;
@@ -25,17 +30,23 @@
   }
 }
 
+.product__see-more {
+  position: absolute;
+  bottom: 20px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
 .product__substrate {
   position: absolute;
   display: block;
   opacity: 0;
   z-index: -10;
   top: -5%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: -4.6%;
   width: 109%;
   height: calc(110% + 57px);
-  position: absolute;
   background-color: rgba(white, 0.2);
   border-radius: 5px;
 

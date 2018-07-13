@@ -23,7 +23,21 @@
 
 .main-nav__dropdown-item {
   position: relative;
-  &:hover,
+  &:hover {
+    & .main-nav__dropdown-control {
+      background-color: #f7f6f3;
+      color: #323232;
+      outline: none;
+      svg {
+        fill: black;
+      }
+    }
+    & .main-nav__nested-item {
+      display: block;
+    }
+  }
+  //Не написал через запятую, чтобы сфолбэчить
+  //hover для IE
   &:focus-within {
     & .main-nav__dropdown-control {
       background-color: #f7f6f3;
@@ -154,6 +168,8 @@
   svg {
     margin: 0;
     flex-shrink: 0;
+    width: 17px;
+    height: 17px;
   }
 }
 

@@ -42,6 +42,9 @@
   &:hover {
     color: black;
   }
+  &::-ms-expand {
+    display: none;
+  }
 }
 
 .filter-products__sort-wrapper {
