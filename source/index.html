@@ -13,7 +13,7 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
-    <script src="js/svg4everybody.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body >
     <div class="slider__background" id="slider-background">
@@ -374,22 +374,28 @@
       </div>
       <section class="map index-content__map">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="address-block map__address">
-          <p class="address-block__address">
-            Адрес главного офиса<br>и офлайн-магазина:<br>
-            <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+        <div class="map__map-wrapper">
+          <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6e7037281cbb0eea31d8192affea5b1599c90b0463d33272171f0f8a570dd88d&amp;&amp;height=430&amp;lang=ru_UA&amp;scroll=true"></script> -->
+          <div id="map" class="map__interactive-map"></div>
+        </div>
+        <div class="address-block__container">
+          <div class="address-block map__address">
+            <p class="address-block__address">
+              Адрес главного офиса<br>и офлайн-магазина:<br>
+              <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
 
-          <p class="address-block__phone">
-            Для заказов по телефону:
-            <a href="tel:+88124502525" class="address-block__phone-link">
-              <strong>8 812 450-25-25</strong>
-            </a>
-            (с 10 до 20 ежедневно)
-          </p>
-          <button id="index-feedback-show"
-            class="address-block__feedback rounded-button">
-            Форма обратной связи
-          </button>
+            <p class="address-block__phone">
+              Для заказов по телефону:
+              <a href="tel:+88124502525" class="address-block__phone-link">
+                <strong>8 812 450-25-25</strong>
+              </a>
+              (с 10 до 20 ежедневно)
+            </p>
+            <button id="index-feedback-show"
+              class="address-block__feedback rounded-button">
+              Форма обратной связи
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -439,6 +445,7 @@
           © 2017
       </div>
     </footer>
+    <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody(); // run it now or whenever you are ready</script>
     <script type="text/javascript" src="js/index.js"></script>
   </body>

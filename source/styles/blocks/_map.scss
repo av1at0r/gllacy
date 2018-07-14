@@ -1,13 +1,23 @@
 .map {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-
-  padding: 0 2.3%;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
   height: 430px;
   box-sizing: border-box;
   background-image: url('../img/map@1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.map__map-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map__interactive-map {
+  width: 100%;
+  height: 100%;
 }

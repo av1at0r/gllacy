@@ -1,4 +1,7 @@
 .address-block {
+  position: relative;
+  margin-left: auto;
+
   padding: 30px 25px;
   width: 302px;
   box-sizing: border-box;
@@ -38,4 +41,12 @@
 
 .address-block__feedback {
   width: 100%;
+}
+
+.address-block__container {
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  padding: 0 2.3%;
+  box-sizing: border-box;
 }
