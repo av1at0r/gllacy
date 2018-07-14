@@ -13,7 +13,7 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   </head>
   <body >
     <div class="slider__background" id="slider-background">
@@ -37,7 +37,7 @@
       </div>
     </div>
     <div id="index-feedback" class="feedback">
-      <form action="" class="feedback__form">
+      <form action="#" class="feedback__form">
         <b class="feedback__title">Мы обязательно вам ответим!</b>
         <label for="feedback__name" class="visually-hidden">Имя</label>
         <input id="feedback__name" type="text"
@@ -75,7 +75,7 @@
               <li class="submenu__item submenu__item--bold">
                 <a href="#">Новинки</a>
               </li>
-              <hr class="submenu__divider">
+              <li role="separator" class="submenu__divider"></li>
               <li class="submenu__item">
                 <a href="#">Сливочное</a>
               </li>
@@ -130,7 +130,7 @@
               <input id="main-nav__login-email" type="email" placeholder="Электронная почта"
                 class="base-input">
               <label class="visually-hidden" for="main-nav__login-password">Пароль</label>
-              <input id="main-nav__login-password"type="password" placeholder="Пароль"
+              <input id="main-nav__login-password" type="password" placeholder="Пароль"
                 class="base-input">
               <div class="login-form__submit-row">
                 <button type="submit" class="rounded-button login-form__submit">Войти</button>
@@ -157,7 +157,7 @@
       </nav>
       <p class="main-header__contacts contacts">
         <span class="contacts__time">С 10 до 20, ежедневно</span><br>
-        <a class="contacts__phone"href="tel:+88124502525">8 812 450-25-25</a>
+        <a class="contacts__phone" href="tel:+88124502525">8 812 450-25-25</a>
       </p>
     </header>
     <main class="index-content">
@@ -339,7 +339,7 @@
             <li class="features__item features__item--thermometer">
               Доставка нашего мороженого до заказчиков осуществляется в
               специальном термопаке, который не дает мороженому растаять в пути и
-               позволяет сохранить превосходный вкус.
+              позволяет сохранить превосходный вкус.
             </li>
           </ul>
         </div>
@@ -445,7 +445,7 @@
       </div>
     </footer>
     <script src="js/svg4everybody.min.js"></script>
-    <script>svg4everybody(); // run it now or whenever you are ready</script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/index.js"></script>
   </body>
 </html>

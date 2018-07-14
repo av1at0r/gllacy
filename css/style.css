@@ -102,8 +102,9 @@ main {
 
 .submenu__divider {
   margin: 0 auto;
-  margin-top: 5px;
-  width: 90%; }
+  width: 90%;
+  height: 1px;
+  background-color: #323232; }
 
 .main-nav {
   display: -webkit-box;
