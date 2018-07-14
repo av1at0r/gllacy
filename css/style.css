@@ -760,20 +760,9 @@ main {
   margin-left: 11px; }
 
 .map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 2.3%;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
   height: 430px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -781,7 +770,20 @@ main {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.map__map-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.map__interactive-map {
+  width: 100%;
+  height: 100%; }
+
 .address-block {
+  position: relative;
+  margin-left: auto;
   padding: 30px 25px;
   width: 302px;
   -webkit-box-sizing: border-box;
@@ -814,6 +816,14 @@ main {
 
 .address-block__feedback {
   width: 100%; }
+
+.address-block__container {
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  padding: 0 2.3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .secondary-nav {
   margin: 0;
