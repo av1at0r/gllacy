@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="preload" href="css/style.css" as="stylesheet">
     <link rel="preload" href="img/ice-cream-slider1@1x.webp" as="image" type="image/webp">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="js/svg4everybody.min.js" as="script">
+    <link rel="preload" href="fonts/roboto.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotomedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotobold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="https://api-maps.yandex.ru/2.1/?lang=ru_RU" as="script" >
     <meta charset="utf-8">
     <title>Gllacy Shop</title>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -13,7 +17,7 @@
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body >
     <div class="slider__background" id="slider-background">
@@ -244,7 +248,10 @@
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="products-list">
           <li class="product product--hit products-list__item">
-            <img src="img/ice-cream-orange.jpg" alt="" class="product__photo">
+            <picture>
+              <source srcset="img/ice-cream-orange.webp" type="image/webp">
+              <img src="img/ice-cream-orange.jpg" alt="" class="product__photo">
+            </picture>
             <p class="product__cost">
               310
               <svg width="31" height="36"><use xlink:href="img/sprite.svg#ruble"></use></svg>
@@ -262,7 +269,10 @@
             </div>
           </li>
           <li class="product product--hit products-list__item">
-            <img src="img/ice-cream-cofee-choco.jpg" alt="" class="product__photo">
+            <picture>
+              <source srcset="img/ice-cream-cofee-choco.webp" type="image/webp">
+              <img src="img/ice-cream-cofee-choco.jpg" alt="" class="product__photo">
+            </picture>
             <p class="product__cost">
               380
               <svg width="31" height="36"><use xlink:href="img/sprite.svg#ruble"></use></svg>
@@ -279,7 +289,10 @@
             </div>
           </li>
           <li class="product product--hit products-list__item">
-            <img src="img/ice-cream-strawberry.jpg" alt="" class="product__photo">
+            <picture>
+              <source srcset="img/ice-cream-strawberry.webp" type="image/webp">
+              <img src="img/ice-cream-strawberry.jpg" alt="" class="product__photo">
+            </picture>
             <p class="product__cost">
               355
               <svg width="31" height="36"><use xlink:href="img/sprite.svg#ruble"></use></svg>
@@ -296,7 +309,10 @@
             </div>
           </li>
           <li class="product product--hit products-list__item">
-            <img src="img/ice-cream-caramel.jpg" alt="" class="product__photo">
+            <picture>
+              <source srcset="img/ice-cream-caramel.webp" type="image/webp">
+              <img src="img/ice-cream-caramel.jpg" alt="" class="product__photo">
+            </picture>
             <p class="product__cost">
               415
               <svg width="31" height="36"><use xlink:href="img/sprite.svg#ruble"></use></svg>
@@ -446,6 +462,7 @@
     </footer>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
